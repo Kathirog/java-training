@@ -1,0 +1,60 @@
+import java.util.*;
+// creating a class Node - step 1
+class Node{
+    int data;
+    Node next;
+    //creating a constructor - step 2
+    Node(int data){
+        this.data=data;
+        this.next=null;
+    }
+}
+class LinkedList{    //step4
+    Node head,tail;
+    //step 5 interseting Node
+    public void insert(int data){
+        Node newNode=new Node(data);
+        //newNode.next=head;
+        if (head==null){
+            head=newNode;
+            tail=newNode;
+        }
+        else{
+            tail.next=newNode;
+            tail=newNode;
+        }
+    }
+
+    public void display(){
+        Node temp=head;
+        while(temp!=null){
+            System.out.println(temp.data);
+            
+            temp = temp.next;
+           
+            
+        }
+    }
+
+    public void insertATBegin(int data){
+        Node newNode=new Node(data);
+        newNode.next=head;
+        head=newNode;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		LinkedList link= new LinkedList();
+		System.out.println("insert at the end");
+		link.insert(100);
+		link.insert(200);
+		link.insert(300);
+		link.display();
+		System.out.println("insert at the start");
+		link.insertATBegin(20);
+	
+		link.display();
+		
+	}
+}
