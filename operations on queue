@@ -1,0 +1,66 @@
+// Queue class
+class Queue {
+    int a[] = new int[5];
+    int front = -1;
+    int rear = -1;
+    
+    // enqueue() - adds an element to the rear of the queue
+    public void enqueue(int data) {
+        if (rear == a.length - 1) {
+            System.out.println("Queue is full");
+        } else {
+            if (front == -1) {  // If the queue is empty
+                front = 0;
+            }
+            rear++;
+            a[rear] = data;
+        }
+    }
+    
+    // dequeue() - removes an element from the front of the queue
+    public void dequeue() {
+        if (front == -1 || front > rear) {
+            System.out.println("Queue is empty");
+        } else {
+            System.out.println("Removed: " + a[front]);
+            front++;
+        }
+    }
+    
+    // peek() - shows the front element without removing it
+    public void peek() {
+        if (front == -1 || front > rear) {
+            System.out.println("Queue is empty");
+        } else {
+            System.out.println("Front of the element: " + a[front]);
+        }
+    }
+    
+    // display() - displays all elements in the queue
+    public void display() {
+        if (front == -1 || front > rear) {
+            System.out.println("Queue is empty");
+        } else {
+            System.out.print("Queue elements: ");
+            for (int i = front; i <= rear; i++) {
+                System.out.print(a[i] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+// Main function
+public class Main {
+    public static void main(String[] args) {
+        Queue q = new Queue();
+        q.enqueue(10);
+        q.enqueue(20);
+        q.enqueue(30);
+        q.enqueue(40);
+        q.enqueue(50);
+        q.dequeue();
+        q.peek();
+        q.display();
+    }
+}
