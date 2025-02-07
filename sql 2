@@ -22,7 +22,7 @@ INSERT INTO Employee
 (5,'34', ' Bella Thorne','2004-08-05', '2022-06-30', 98000, 5000.78, 'pollachi', '11 mahalingapuram', 'ADS', 'bella@gmail.com', 'Active'),
 (06,'006', 'Messi', '1993-06-19', '2017-08-21', 72000, 4000, 'Delhi', 'Street 10', 'Admin', 'mehhhhhssssiii@gmail.com', 'A'),
 (07,'007', 'megan fox', '1987-12-05', '2010-04-15', 88000, 7000, 'Pune', 'Street 7', 'IT', 'meganfoxy@gmail.com', 'A'),
-(08,'008', 'Emma', '1991-02-12', '2016-03-23', 67000, 5500, 'Mumbai', 'Street 8', 'HR', 'emma@gmail.com', 'A'),
+(08,'008', 'sabreena carpenter', '1991-02-12', '2016-03-23', 67000, 5500, 'Mumbai', 'Street 8', 'HR', 'emma@gmail.com', 'A'),
 (09,'009', 'Kendell', '1989-11-28', '2014-09-09', 92000, 6500, 'Chennai', 'tnagar', 'Finance', 'kendell@gmail.com', 'A'),
 (10,'010', 'Maddion beer', '1994-08-14', '2021-02-01', 74000, 4300, 'kolkata', 'Street 10', 'Marketing', 'madbeer@gmail.com', 'A');
 select * from Employee;
